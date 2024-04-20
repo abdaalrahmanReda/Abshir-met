@@ -40,7 +40,9 @@ namespace Abshir
         {
             if (textusername.Text == Properties.Settings.Default.username && textuserpassword.Text == Properties.Settings.Default.password)
             {
-                this.Visible = false; // Hide the form if both username and password match
+                this.Visible = false;
+                Form2 form2 = new Form2();
+                form2.Show();// Hide the form if both username and password match
             }
             else if (textusername.Text != Properties.Settings.Default.username && textuserpassword.Text == Properties.Settings.Default.password)
             {
@@ -60,7 +62,7 @@ namespace Abshir
                 MessageBox.Show("Error: Invalid Username and Password");
             }
         }
-
+         
         private void button2_Click(object sender, EventArgs e)// exit butt
         {
             DialogResult exityesno = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo);
