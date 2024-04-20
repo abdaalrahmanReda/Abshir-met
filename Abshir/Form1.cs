@@ -69,7 +69,7 @@ namespace Abshir
 
             if (exityesno == DialogResult.Yes)
             {
-                Application.Exit(); // Exit the application
+                Application.Exit();// Exit the application
             }
 
         }

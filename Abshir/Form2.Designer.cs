@@ -30,30 +30,65 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.sidepanel = new System.Windows.Forms.Panel();
+            this.Monthlybutt = new System.Windows.Forms.Button();
+            this.CasesButt = new System.Windows.Forms.Button();
+            this.DonorsButt = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toppanel = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.mainpanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.sidepanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.toppanel.SuspendLayout();
+            this.mainpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidepanel
             // 
             this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
-            this.sidepanel.Controls.Add(this.button4);
-            this.sidepanel.Controls.Add(this.button3);
-            this.sidepanel.Controls.Add(this.button1);
+            this.sidepanel.Controls.Add(this.button2);
+            this.sidepanel.Controls.Add(this.Monthlybutt);
+            this.sidepanel.Controls.Add(this.CasesButt);
+            this.sidepanel.Controls.Add(this.DonorsButt);
             this.sidepanel.Controls.Add(this.pictureBox1);
             this.sidepanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidepanel.Location = new System.Drawing.Point(0, 52);
+            this.sidepanel.Location = new System.Drawing.Point(0, 0);
             this.sidepanel.Name = "sidepanel";
-            this.sidepanel.Size = new System.Drawing.Size(286, 668);
+            this.sidepanel.Size = new System.Drawing.Size(306, 886);
             this.sidepanel.TabIndex = 0;
+            // 
+            // Monthlybutt
+            // 
+            this.Monthlybutt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Monthlybutt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
+            this.Monthlybutt.Location = new System.Drawing.Point(12, 483);
+            this.Monthlybutt.Name = "Monthlybutt";
+            this.Monthlybutt.Size = new System.Drawing.Size(268, 53);
+            this.Monthlybutt.TabIndex = 6;
+            this.Monthlybutt.Text = "MonthlyAssistamces";
+            this.Monthlybutt.UseVisualStyleBackColor = true;
+            // 
+            // CasesButt
+            // 
+            this.CasesButt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CasesButt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
+            this.CasesButt.Location = new System.Drawing.Point(12, 376);
+            this.CasesButt.Name = "CasesButt";
+            this.CasesButt.Size = new System.Drawing.Size(268, 53);
+            this.CasesButt.TabIndex = 5;
+            this.CasesButt.Text = "Cases";
+            this.CasesButt.UseVisualStyleBackColor = true;
+            // 
+            // DonorsButt
+            // 
+            this.DonorsButt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DonorsButt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
+            this.DonorsButt.Location = new System.Drawing.Point(12, 271);
+            this.DonorsButt.Name = "DonorsButt";
+            this.DonorsButt.Size = new System.Drawing.Size(268, 53);
+            this.DonorsButt.TabIndex = 4;
+            this.DonorsButt.Text = "Donors";
+            this.DonorsButt.UseVisualStyleBackColor = true;
+            this.DonorsButt.Click += new System.EventHandler(this.DonorsButt_Click);
             // 
             // pictureBox1
             // 
@@ -65,87 +100,54 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // toppanel
+            // mainpanel
             // 
-            this.toppanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
-            this.toppanel.Controls.Add(this.button2);
-            this.toppanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.toppanel.Location = new System.Drawing.Point(0, 0);
-            this.toppanel.Name = "toppanel";
-            this.toppanel.Size = new System.Drawing.Size(1140, 52);
-            this.toppanel.TabIndex = 1;
+            this.mainpanel.Controls.Add(this.panel1);
+            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainpanel.Location = new System.Drawing.Point(306, 0);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(1038, 886);
+            this.mainpanel.TabIndex = 0;
+            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainpanel_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1038, 58);
+            this.panel1.TabIndex = 0;
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Crimson;
-            this.button2.Location = new System.Drawing.Point(1073, 8);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Maroon;
+            this.button2.Location = new System.Drawing.Point(12, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 38);
-            this.button2.TabIndex = 3;
+            this.button2.Size = new System.Drawing.Size(48, 29);
+            this.button2.TabIndex = 1;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // mainpanel
-            // 
-            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(286, 52);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(854, 668);
-            this.mainpanel.TabIndex = 0;
-            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainpanel_Paint);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
-            this.button1.Location = new System.Drawing.Point(12, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(268, 53);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Donors";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
-            this.button3.Location = new System.Drawing.Point(12, 376);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(268, 53);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Cases";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(171)))), ((int)(((byte)(156)))));
-            this.button4.Location = new System.Drawing.Point(12, 483);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(268, 53);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "MonthlyAssistamces";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1140, 720);
+            this.ClientSize = new System.Drawing.Size(1344, 886);
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.sidepanel);
-            this.Controls.Add(this.toppanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.sidepanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.toppanel.ResumeLayout(false);
+            this.mainpanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -153,12 +155,12 @@
         #endregion
 
         private System.Windows.Forms.Panel sidepanel;
-        private System.Windows.Forms.Panel toppanel;
         private System.Windows.Forms.Panel mainpanel;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Monthlybutt;
+        private System.Windows.Forms.Button CasesButt;
+        private System.Windows.Forms.Button DonorsButt;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
