@@ -1,0 +1,14 @@
+E:\System anal projects\Abshir\Abshir\bin\Debug\Abshir.exe.config
+E:\System anal projects\Abshir\Abshir\bin\Debug\Abshir.exe
+E:\System anal projects\Abshir\Abshir\bin\Debug\Abshir.pdb
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.csproj.AssemblyReference.cache
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.Login.resources
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.Properties.Resources.resources
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.csproj.GenerateResource.cache
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.csproj.CoreCompileInputs.cache
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.exe
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.pdb
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.Form2.resources
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.UC__MonthlyAssistances.resources
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.UC_Cases.resources
+E:\System anal projects\Abshir\Abshir\obj\Debug\Abshir.UC_Donores.resources
